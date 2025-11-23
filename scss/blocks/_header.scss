@@ -1,0 +1,146 @@
+$black: #000;
+$dark: #060707;
+$white: #fff;
+$accent: #e63946;
+$accent-hover: #DD4056;
+
+$font: "Inter", sans-serif;
+
+@mixin flex($dir: row, $justify: flex-start, $align: stretch, $gap: 0) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+header {
+    padding: 37px 49px;
+    width: 100%;
+    background: $black;
+    @include flex(center, center);
+
+    .container {
+        @include flex(space-between, center);
+    }
+}
+
+.nav-wrapper {
+    @include flex(space-between, center);
+    height: max-content;
+    width: 100%;
+}
+
+.btn-sign button {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%);
+    color: $white;
+    font: italic 300 24px $font;
+}
+
+.nav-block {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    padding-bottom: 6px;
+
+    a {
+        color: $white;
+        font: italic 400 24px $font;
+
+        &:hover {
+            color: $accent-hover;
+        }
+    }
+
+    .underline-block {
+        position: relative;
+        display: inline-block;
+        height: max-content;
+    }
+
+    .underline--main {
+        position: absolute;
+        bottom: 0;
+        top: 42px;
+        left: -20px;
+        width: 65px;
+        height: 5px;
+        background: $accent;
+        clip-path: polygon(5px 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.icpn__wrapper {
+    @include flex(row, flex-start, center, 45px);
+    height: max-content;
+}
+
+nav {
+    @include flex(row, flex-start, flex-end, 40px);
+    position: relative;
+}
+
+
+@media (min-width: 1000px) and (max-width: 1440px) {
+
+    .navMobile-wrapper,
+    .mobile-menu,
+    .mainMobile-wrapper,
+    .mainMobile {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        padding: 45px 49px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1000px) {
+    header {
+        padding: 15px;
+        width: 100%;
+        background: $dark;
+        @include flex();
+    }
+
+    .nav-wrapper {
+        display: none;
+    }
+
+    .navMobile-wrapper {
+        @include flex(space-between, center);
+        height: 100%;
+        width: 100%;
+
+        &__icon-wrapper {
+            @include flex(center, center, 20px);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        height: 75px;
+        width: 100%;
+        background: $dark;
+        @include flex(center, center);
+    }
+
+    .nav-wrapper {
+        display: none;
+    }
+
+    .navMobile-wrapper {
+        @include flex(space-between, center);
+        height: 100%;
+        width: 100%;
+
+        &__icon-wrapper {
+            @include flex(center, center, 20px);
+        }
+    }
+}

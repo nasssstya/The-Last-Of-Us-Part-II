@@ -1,0 +1,360 @@
+@media (min-width: 1000px) and (max-width: 1439px) {
+  .navMobile-wrapper,
+  .mainMobile-wrapper,
+  .mainMobile {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .nav-wrapper nav {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+  }
+  .nav-wrapper .nav-block {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    padding-bottom: 6px;
+    height: -moz-max-content;
+    height: max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .nav-wrapper .nav-block a {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .nav-wrapper .nav-block a:hover {
+    color: #DD4056;
+  }
+  .nav-wrapper .nav-block .underline-block {
+    position: relative;
+    display: inline-block;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .nav-wrapper .nav-block .underline-block .underline {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    transform: translateX(-15px);
+    width: 49px;
+    height: 4px;
+    background: #e63946;
+    clip-path: polygon(5px 0, 100% 0, 100% 100%, 0 100%);
+    transition: left 1s cubic-bezier(0.25, 1, 0.5, 1), width 1s cubic-bezier(0.25, 1, 0.5, 1);
+    opacity: 0.9;
+    pointer-events: none;
+  }
+  .icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .icon-wrapper img {
+    width: 25px;
+    height: 25px;
+  }
+  button {
+    background-color: #DD4056;
+    width: 150px;
+    height: 30px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+  }
+  .btn-sign {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .btn-sign button {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%);
+  }
+  .main {
+    width: 100%;
+    height: 900px;
+    background: url(../image/main_bg.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 128px;
+  }
+  .main .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .main__heading h1 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 37px;
+    margin-bottom: 12px;
+  }
+  .main__platform {
+    display: flex;
+  }
+  .main__platform--color1 {
+    color: #DD4056;
+    font-weight: bold;
+    padding: 0 3px 0 14px;
+  }
+  .main__platform--color2 {
+    color: #DD4056;
+    font-weight: bold;
+    padding: 0 15px 0 8px;
+  }
+  .main__platform p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    font-style: italic;
+  }
+  .main__rating {
+    display: flex;
+    gap: 10px;
+  }
+  .main__rating-star img {
+    width: 32px;
+    height: 32px;
+  }
+  .main__button {
+    width: 151px;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+    clip-path: polygon(12px 0%, 100% 0%, 151px 25.5484px, 138.321px 44px, 0 44px, 0 18.2093px);
+  }
+  .main__price {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 51px;
+  }
+  .main__subtitle {
+    margin-top: 19px;
+  }
+  .main__subtitle p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+  }
+  .main__btns {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .main__imageBlock-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .main__imageBlock-wrapper .imgBlck1, .main__imageBlock-wrapper .imgBlck2, .main__imageBlock-wrapper .imgBlck3 {
+    width: 358px;
+    height: 159px;
+    background-repeat: no-repeat;
+    background-size: 358px 159px;
+  }
+  .main__imageBlock-wrapper .imgBlck1 {
+    background-image: url(../image/imgBlock1.png);
+  }
+  .main__imageBlock-wrapper .imgBlck2 {
+    background-image: url(../image/imgBlock2.png);
+  }
+  .main__imageBlock-wrapper .imgBlck3 {
+    background-image: url(../image/imgBlock3.png);
+  }
+  .character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1024px;
+    width: 100%;
+    background: url(../image/characterBg.png) no-repeat;
+    background-size: 100%;
+  }
+  .characterBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .characterBlock__imageCard {
+    width: 183px;
+    height: 170px;
+  }
+  .characterBlock__imageCard--main {
+    width: 504px;
+    height: 510px;
+  }
+  .characterBlock__imageCard--secondary {
+    display: flex;
+    flex-direction: column;
+  }
+  .characterBlock__imageCards {
+    display: flex;
+    flex-direction: row;
+  }
+  .characterBlock__imageIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: -moz-max-content;
+    height: max-content;
+    padding-top: 25px;
+  }
+  .character__description {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .character__description__subtitle p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: italic;
+  }
+  .character__button button {
+    width: 151px;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+    clip-path: polygon(12px 0%, 100% 0%, 151px 25.5484px, 138.321px 44px, 0 44px, 0 18.2093px);
+  }
+  .reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 886px;
+    background-color: #060707;
+  }
+  .reg__heading h2 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: 2px;
+    padding-bottom: 33px;
+  }
+  .reg-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  .reg__form {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .reg__form input[type=text],
+  .reg__form input[type=email],
+  .reg__form select {
+    background-color: #1b1b1b;
+    border: none;
+    width: 811px;
+    height: 75px;
+    padding: 15px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+  }
+  .reg__form input[type=text]:focus,
+  .reg__form input[type=email]:focus,
+  .reg__form select:focus {
+    border: 1px solid #ff5566;
+  }
+  .reg__form .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    font-style: italic;
+    font-size: 14px;
+    color: #ccc;
+  }
+  .reg__form input[type=checkbox] {
+    accent-color: #ff5566;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+  }
+  .reg__form button {
+    background-color: #e34c61;
+    width: 358px;
+    height: 75px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    font-style: italic;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  .reg__form button:hover {
+    background-color: #ff6678;
+  }
+  .reg__qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .reg__qr-info {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.7;
+  }
+  .reg__qr .qrColor {
+    color: #DD4056;
+    font-weight: 700;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=index-tablet.css.map */

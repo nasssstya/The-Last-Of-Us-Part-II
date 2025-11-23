@@ -1,0 +1,242 @@
+@media (min-width: 576px) and (max-width: 1000px) {
+  body {
+    color: #fff;
+  }
+  header {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #060707;
+  }
+  .container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-wrapper {
+    display: none;
+  }
+  .navMobile-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .navMobile-wrapper__icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    display: none;
+  }
+  .mainMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 667px;
+    width: 100%;
+    background-image: url(../image/main_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .mainMobile .container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainMobile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 58px;
+    width: 100%;
+  }
+  .mainMobile__button button,
+  .mainMobile .ad__button,
+  .mainMobile .learnMore__button button {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    width: 151px;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+    clip-path: polygon(12px 0%, 100% 0%, 151px 25.5484px, 138.321px 44px, 0 44px, 0 18.2093px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .mainMobile__btns-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 32px;
+  }
+  .mainMobile__platform--color, .mainMobile__platform p {
+    color: #DD4056;
+    font-weight: 600;
+    font-size: 24px;
+    font-style: italic;
+  }
+  .mainMobile__heading h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  .mainMobile__price {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .mainMobile__rating {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 23px;
+  }
+  .mainMobile__subtitle p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+  .mainMobile__icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainMobile__icon img, .mainMobile__star img {
+    width: 100%;
+    height: 100%;
+  }
+  .mainMobile__stars-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .description,
+  .whyUs,
+  .ad,
+  .learnMore,
+  .faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .description {
+    height: 700px;
+    background-image: url(../image/descriptionMobile-bg.png);
+    flex-direction: column;
+    gap: 24px;
+  }
+  .whyUs {
+    background-color: #0C0C0C;
+    padding: 50px 0;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .whyUs__Cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .whyUs__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+  .whyUs__subtitle p,
+  .whyUs__cardHeading h3,
+  .whyUs__heading h2 {
+    text-align: center;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+  }
+  .ad {
+    height: 500px;
+    background-image: url(../image/adBg.png);
+  }
+  .learnMore {
+    height: 400px;
+    background-image: url(../image/learnMoreMobileBG.png);
+    flex-direction: column;
+    gap: 24px;
+  }
+  .learnMore__h2 h2,
+  .learnMore__subtitle p {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+  }
+  .faq {
+    height: 800px;
+    background-image: url(../image/faqBG.png);
+    flex-direction: column;
+  }
+  .faq__heading h2 {
+    text-align: center;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+  .faq .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq__questionBlock {
+    width: 740px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faqOdd {
+    background: #292929;
+  }
+  .faq__questionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 720px;
+  }
+  .faq__question p {
+    font-weight: 600;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    color: #fff;
+    opacity: 0.7;
+  }
+}/*# sourceMappingURL=index-breakpoint.css.map */

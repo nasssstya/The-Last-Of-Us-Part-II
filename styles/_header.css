@@ -1,0 +1,242 @@
+ header {
+          padding: 37px 49px 37px 49px;
+        background-color: #000;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ header .container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+
+ .nav-wrapper {
+     display: flex;
+     flex-direction: row;
+     height: max-content;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+
+ .btn-sign button {
+     clip-path: polygon(0 0,
+             100% 0,
+             100% 100%,
+             20px 100%);
+     color: #fff;
+     font-family: "Inter", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 300;
+     font-size: 24px;
+     font-style: italic;
+
+ }
+
+ .nav-block a {
+     color: #fff;
+     font-family: "Inter", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-size: 24px;
+     font-style: italic;
+ }
+
+ nav {
+     position: relative;
+     display: flex;
+     gap: 40px;
+     align-items: flex-end;
+ }
+
+ .nav-block {
+     display: inline-block;
+     position: relative;
+     padding-left: 8px;
+     height: max-content;
+     padding-bottom: 6px;
+     width: max-content;
+ }
+
+ .underline-block {
+     position: relative;
+     display: inline-block;
+     height: max-content;
+ }
+
+ .underline {
+     position: absolute;
+     bottom: 0px;
+     left: 10px;
+     transform: translateX(-15px);
+     width: 49px;
+     height: 4px;
+     background: #e63946;
+     clip-path: polygon(5px 0, 100% 0, 100% 100%, 0 100%);
+     transition:
+         left 1s cubic-bezier(0.25, 1, 0.5, 1),
+         width 1s cubic-bezier(0.25, 1, 0.5, 1);
+     opacity: 0.9;
+     pointer-events: none;
+ }
+
+ .nav-block a:hover {
+     color: #DD4056;
+ }
+
+ .underline--main {
+     position: absolute;
+     bottom: 0px;
+     top: 42px;
+     left: -20px;
+     width: 65px;
+     height: 5px;
+     background: #e63946;
+     clip-path: polygon(5px 0, 100% 0, 100% 100%, 0 100%);
+ }
+
+ .icpn__wrapper {
+     display: flex;
+     flex-direction: row;
+     gap: 45px;
+     height: max-content;
+ }
+
+
+
+
+
+ @media (min-width: 1000px) and (max-width:1440px) {
+
+     .navMobile-wrapper,
+     .mobile-menu {
+         display: none;
+     }
+
+     .mainMobile-wrapper {
+         display: none;
+     }
+
+     .container {
+         width: 100%;
+     }
+
+
+     header {
+         padding-top: 45px;
+         padding-bottom: 45px;
+         width: 100%;
+     }
+
+
+     .mainMobile {
+         display: none;
+     }
+
+     .btn-sign button {
+         font-size: 24px;
+     }
+
+     .nav-block a {
+         font-size: 24px;
+     }
+
+     nav {
+         gap: 20px;
+     }
+
+     .underline-block {
+         position: relative;
+         display: inline-block;
+         height: max-content;
+     }
+
+ }
+
+
+
+
+ @media (min-width: 576px) and (max-width:1000px) {
+     header {
+         padding: 15px 15px;
+         width: 100%;
+         display: flex;
+         background-color: #060707;
+     }
+
+     .nav-wrapper {
+         display: none;
+     }
+
+
+
+
+     .navMobile-wrapper {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         height: 100%;
+         width: 100%;
+     }
+
+     .navMobile__icon-wrapper {
+         display: flex;
+         flex-direction: row;
+         gap: 20px;
+         justify-content: center;
+         align-items: center;
+     }
+
+ }
+
+
+
+ 
+ @media (max-width: 576px) {
+     header {
+         height: 75px;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: #060707;
+     }
+
+
+     .nav-wrapper {
+         display: none;
+     }
+
+     .navMobile-wrapper {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         height: 100%;
+         width: 100%;
+     }
+
+     .navMobile__icon-wrapper {
+         display: flex;
+         flex-direction: row;
+         gap: 20px;
+         justify-content: center;
+         align-items: center;
+     }
+
+ }
+
+
+ @media (max-width:410px){
+    header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+ }

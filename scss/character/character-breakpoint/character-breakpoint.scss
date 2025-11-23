@@ -1,0 +1,174 @@
+$font-family: "Inter", sans-serif;
+$white: #fff;
+$primary-color: #DD4056;
+$secondary-color: #e63946;
+$gradient-bg: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+
+@media (min-width: 1000px) and (max-width: 1440px) {
+
+    .underline--mainImage {
+        position: absolute;
+        bottom: 0;
+        top: 30px;
+        left: -20px;
+        width: 45px;
+        height: 5px;
+        background: $secondary-color;
+        clip-path: polygon(5px 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .icon-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        height: max-content;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    button {
+        background-color: $primary-color;
+        width: 150px;
+        height: 30px;
+        color: $white;
+    }
+
+    .btn-sign {
+        height: max-content;
+    }
+
+    .character {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        width: 100%;
+        background: url(../../image/characterBg.png) no-repeat;
+        background-size: 100% 100%;
+
+        &Block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+        }
+
+        &__heading h2 {
+            color: $white;
+            font-family: $font-family;
+            font-weight: 800;
+            font-size: 40px;
+            font-style: normal;
+        }
+
+        &__subtitle p {
+            color: $white;
+            font-family: $font-family;
+            font-weight: 300;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        &__button button {
+            width: 151px;
+            height: 44px;
+            border: none;
+            cursor: pointer;
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 20px;
+            font-style: italic;
+            color: $white;
+            background: $gradient-bg;
+            clip-path: polygon(12px 0%,
+                    100% 0%,
+                    151px 25.5484px,
+                    138.321px 44px,
+                    0 44px,
+                    0 18.2093px);
+        }
+
+        &__h3 .h3--italic {
+            color: $white;
+            font-family: $font-family;
+            font-weight: 300;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        &__image-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+        }
+
+        &__imageIcons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: max-content;
+            padding-top: 25px;
+        }
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-self: flex-start;
+            margin: 50px 0;
+        }
+
+        &__icon {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .character__imageCard {
+        width: 150px;
+        height: 140px;
+
+        &--main {
+            width: 420px;
+            height: 420px;
+        }
+
+        &--secondary {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .character__imageCards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    @for $i from 1 through 5 {
+        .charIcon#{$i} {
+            width: 80px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url(../../image/CharIcon#{$i}.svg);
+        }
+    }
+
+    @for $i from 1 through 4 {
+        .imCard#{$i} {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url(../../image/imBlock#{$i}.png);
+        }
+    }
+
+    .imCard4 {
+        background-image: url(../../image/imBlockMain.png);
+    }
+}

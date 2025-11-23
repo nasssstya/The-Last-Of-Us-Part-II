@@ -1,0 +1,157 @@
+@media (min-width: 672px) and (max-width: 999px) {
+  .reg {
+    padding: 30px 85px;
+    background-color: #060707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg__heading {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .reg__heading h2 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 48px;
+    font-style: normal;
+    width: -moz-max-content;
+    width: max-content;
+    padding-bottom: 33px;
+    letter-spacing: 2px;
+  }
+  .reg__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  .reg__image img {
+    width: 362px;
+    height: 362px;
+  }
+  .reg__form {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .reg__form form {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+  }
+  .reg__form input[type=text],
+  .reg__form input[type=email],
+  .reg__form select {
+    background-color: #1b1b1b;
+    border: none;
+    width: 600px;
+    height: 90px;
+    padding: 30px;
+    color: #fff;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 32px;
+    font-style: italic;
+    outline: none;
+  }
+  .reg__form input[type=text]::-moz-placeholder, .reg__form input[type=email]::-moz-placeholder, .reg__form select::-moz-placeholder {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 20px;
+  }
+  .reg__form input[type=text]::placeholder,
+  .reg__form input[type=email]::placeholder,
+  .reg__form select::placeholder {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 20px;
+  }
+  .reg__form input[type=text]:focus,
+  .reg__form input[type=email]:focus,
+  .reg__form select:focus {
+    border: 1px solid #ff5566;
+  }
+  .reg__form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+    cursor: pointer;
+  }
+  .reg__form select option {
+    font-size: 14px;
+    color: #fff;
+    background-color: #1b1b1b;
+    padding: 10px;
+  }
+  .reg__form select::-ms-expand {
+    display: none;
+  }
+  .reg__form .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    font-style: italic;
+    font-size: 14px;
+    color: #ccc;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .reg__form .checkbox-wrapper input[type=checkbox] {
+    accent-color: #ff5566;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+  }
+  .reg__info {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .reg__qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .reg__qr-info {
+    color: #fff;
+    opacity: 0.7;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-size: 24px;
+    font-style: italic;
+    padding-top: 21.5px;
+  }
+  .qrColor,
+  .main__platform--color1 {
+    color: #dd4056;
+    font-weight: 600;
+    opacity: 1;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    font-style: italic;
+    animation: glowPulse 2.5s infinite;
+  }
+  label {
+    color: #fff;
+    opacity: 0.8;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 24px;
+    font-style: italic;
+    width: -moz-max-content;
+    width: max-content;
+    letter-spacing: 1px;
+  }
+}/*# sourceMappingURL=signup-breakpoint.css.map */
