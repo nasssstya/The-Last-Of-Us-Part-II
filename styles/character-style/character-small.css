@@ -1,0 +1,220 @@
+ @media (max-width: 390px) {
+
+     body {
+         color: #fff;
+     }
+
+     .container {
+         width: 80%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .nav-wrapper {
+         display: none;
+     }
+
+    
+
+     .character__heading h2 {
+         color: #fff;
+         font-family: "Inter", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 800;
+         font-size: 24px;
+         font-style: normal;
+     }
+
+     .character__subtitle p {
+         color: #fff;
+         font-family: "Inter", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 300;
+         font-size: 18px;
+         font-style: italic;
+     }
+
+     .character__button button {
+         color: #fff;
+         font-family: "Inter", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 700;
+         font-size: 20px;
+         font-style: italic;
+         width: 141px;
+         height: 34px;
+         border: none;
+         cursor: pointer;
+         background: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+         clip-path: polygon(12px 0%,
+                 100% 0%,
+                 151px 25.5484px,
+                 138.321px 44px,
+                 0 44px,
+                 0 18.2093px);
+
+         color: #fff;
+     }
+
+     .character__h3 .h3--italic {
+         color: #fff;
+         font-family: "Inter", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 300;
+         font-size: 18px;
+         font-style: italic;
+     }
+
+
+
+
+     .character {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 1024px;
+         width: 100%;
+         background-image: url(../../image/mobile/characterBG.png);
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         padding-left: 30px;
+         padding-right: 30px;
+     }
+
+     .characterBlock {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+
+
+     .character__imageCard {
+         width: 100px;
+         height: 90px;
+     }
+
+     .character__imageCards {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .character__imageCard--secondary {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .character__imageCard--main {
+         width: 190px;
+         height: 180px;
+     }
+
+     .imCard1 {
+         background-image: url(../../image/imBlock1.png);
+         height: 60px;
+         width: 70px;
+         background-repeat: no-repeat;
+     }
+
+     .imCard2 {
+         background-image: url(../../image/imBlock2.png);
+         height: 60px;
+         width: 70px;
+         background-repeat: no-repeat;
+     }
+
+     .imCard3 {
+         background-image: url(../../image/imBlock3.png);
+         height: 60px;
+         width: 70px;
+         background-repeat: no-repeat;
+     }
+
+     .imCard4 {
+         background-image: url(../../image/imBlockMain.png);
+         background-size: 100% 100%;
+         background-repeat: no-repeat;
+     }
+
+     .character__imageIcons {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         height: max-content;
+         padding-top: 15px;
+         padding-bottom: 30px;
+     }
+
+     .character__description {
+         display: flex;
+         flex-direction: column;
+         gap: 25px;
+         padding-bottom: 30px;
+     }
+
+     .character__image-wrapper {
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+     }
+
+     .character__subtitle p {
+         color: #fff;
+         font-family: "Inter", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-size: 14px;
+         font-style: italic;
+         letter-spacing: 0.6px;
+
+     }
+
+     .character__icon {
+         width: 70px;
+         height: 70px;
+     }
+
+     .charIcon1 {
+         background-image: url(../../image/CharIcon1.svg);
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         width: 50px;
+         height: 50px;
+     }
+
+     .charIcon2 {
+         background-image: url(../../image/CharIcon2.svg);
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         width: 50px;
+         height: 50px;
+     }
+
+     .charIcon3 {
+         background-image: url(../../image/CharIcon3.svg);
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         width: 50px;
+         height: 50px;
+     }
+
+     .charIcon4 {
+         background-image: url(../../image/CharIcon4.svg);
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         width: 50px;
+         height: 50px;
+     }
+
+     .charIcon5 {
+         background-image: url(../../image/CharIcon5.svg);
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         width: 50px;
+         height: 50px;
+     }
+ }

@@ -1,0 +1,551 @@
+@media (max-width: 410px) {
+  
+
+    body {
+        color: #fff;
+    }
+
+    .container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-wrapper {
+        display: none;
+    }
+
+   
+
+    .main {
+        display: none;
+    }
+
+    .mainMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .mainMobile .container {
+        display: flex;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .mainMobile-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding-bottom: 58px;
+        width: 100%;
+    }
+
+    .mainMobile__button button {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 20px;
+        font-style: italic;
+        width: 151px;
+        height: 44px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+
+        clip-path: polygon(12px 0%,
+                100% 0%,
+                151px 25.5484px,
+                138.321px 44px,
+                0 44px,
+                0 18.2093px);
+
+    }
+
+    .mainMobile__btns-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        margin-top: 32px;
+    }
+
+    .mainMobile__platform--color {
+        color: #DD4056;
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .mainMobile__platform p {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .mainMobile__heading h1 {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 30px;
+        font-style: normal;
+    }
+
+    .mainMobile__heading {
+        margin-top: 30px;
+    }
+
+    .mainMobile__price {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+
+    .mainMobile__rating {
+        margin-top: 23px;
+    }
+
+    .descriptionBlock {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .whyUs {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .whyUs__heading h2 {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-size: 24px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .whyUs .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whyUs__Cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .whyUs__card-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .whyUs__subtitle p {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 15px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .whyUs__cardHeading h3 {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 18px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .ad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 60px;
+    }
+
+
+    .ad-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: max-content;
+        padding: 10px 25px;
+        background-color: rgb(0, 0, 0, 0.5);
+        align-self: flex-end;
+    }
+
+    .ad__heading h2 {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-size: 24px;
+        font-style: normal;
+    }
+
+    .ad__subtitle p {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .ad__button {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 20px;
+        font-style: italic;
+        width: 151px;
+        height: 44px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+        clip-path: polygon(12px 0%,
+                100% 0%,
+                151px 25.5484px,
+                138.321px 44px,
+                0 44px,
+                0 18.2093px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .whyUs__image {
+        width: 300px;
+        height: 170px;
+    }
+
+    .whyImg1 {
+        background-image: url(../../image/mobile/whyImg1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .whyImg2 {
+        background-image: url(../../image/mobile/whyImg2.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .whyImg3 {
+        background-image: url(../../image/mobile/whyImg3.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .description__subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 25px;
+
+    }
+
+    .description__subtitle {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 16px;
+        font-style: italic;
+    }
+
+    .description {
+        height: 700px;
+    }
+
+    .description__heading h2 {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 24px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+
+    .mainMobile__subtitle {
+        margin-top: 20px;
+    }
+
+    .mainMobile__subtitle p {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 14px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+
+    .mainMobile__icons-wrapper {
+        display: none;
+    
+    }
+
+    .mainMobile__icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainMobile__stars-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .mainMobile__star img {
+        width: 19px;
+        height: 19px;
+    }
+
+
+    .mainMobile__rating {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .mainMobile {
+        height: 667px;
+        width: 100%;
+        background-image: url(../../image/mainMobile-bg.png);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .character {
+        display: none;
+    }
+
+    .description {
+        width: 100%;
+        background-image: url(../../image/descriptionMobile-bg.png);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .whyUs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0C0C0C;
+        height: 1192px;
+    }
+
+
+    .ad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../image/adMobilebg.png);
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .learnMore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../image/learnMoreMobileBG.png);
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .learnMore__h2 h2 {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 22px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+
+    .learnMore__subtitle p {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+
+    .learnMore-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .learnMore__button button {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 20px;
+        font-style: italic;
+        width: 141px;
+        height: 34px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+
+        clip-path: polygon(12px 0%,
+                100% 0%,
+                151px 25.5484px,
+                138.321px 44px,
+                0 44px,
+                0 18.2093px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+
+    .faq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        width: 100%;
+        background-image: url(../../image/faqMobileBG.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .faq__heading h2 {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-size: 24px;
+        font-style: normal;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .faq .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq__question-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-end;
+    }
+
+    .faq__questionBlock {
+        width: 290px;
+        height: 60px;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .faqOdd {
+        background: #292929;
+    }
+
+
+
+    .faq__questionIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq__questionContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        width: 328px;
+    }
+
+    .faq__question p {
+        color: #fff;
+        opacity: 0.7;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing: 0.4px;
+    }
+
+    .faq__answer {
+        display: none;
+    }
+
+
+}
