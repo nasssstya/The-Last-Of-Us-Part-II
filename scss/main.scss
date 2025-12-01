@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url(components/_button.scss);
+@import url(components/_effects.scss);
+@import url(components/_footer.scss);
+@import url(components/_header.scss);
+$font: "Inter", sans-serif;
+$white: #fff;
+$accent: #DD4056;
+$dark-bg: #1b1b1b;
+$dark-bg2: #060707;
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-style($color: $white, $weight: 400, $size: 24px, $style: italic, $opacity: 1, $letter-spacing: 0) {
+    color: $color;
+    font-family: $font;
+    font-weight: $weight;
+    font-size: $size;
+    font-style: $style;
+    opacity: $opacity;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin flex($dir: row, $justify: flex-start, $align: stretch, $gap: 0) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin bg-image($url, $size: 100%, $repeat: no-repeat) {
+    background-image: url($url);
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+.container {
+    width: 1340px;
+}
+
+.navMobile-wrapper,
+.mainMobile-wrapper {
+    display: none;
+}
+
+.main {
+    @include bg-image('../image/main_bg.png');
+    padding: 164px 0 118px;
+    width: 100%;
+    @include flex(center, center);
+}
+
+.main__heading h1 {
+    @include text-style($white, 800, 37px, normal);
+    margin-bottom: 12px;
+}
+
+.main__platform p {
+    @include text-style($white, 600, 24px);
+}
+
+.main__h3,
+.main__subtitle p {
+    @include text-style($white, 400, 24px);
+}
+
+.main__rating {
+    @include flex(row, flex-start, center, 10px);
+}
+
+.main__rating-star {
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+
+    &:hover {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 5px #e6d839);
+    }
+}
+
+.main__imageBlock-wrapper {
+    @include flex(column, flex-start, center, 30px);
+}
+
+.main__imageBlock {
+    @include flex(center, center);
+    width: 358px;
+    height: 159px;
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    animation: fadeInUp 0.6s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        filter: brightness(1.1);
+    }
+
+    img {
+        transition: transform 0.3s ease;
+    }
+}
+
+.imgBlck1,
+.imgBlck2,
+.imgBlck3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 358px 159px;
+    background-repeat: no-repeat;
+}
+
+.imgBlck1 {
+    @include bg-image('../image/imgBlock1.png');
+}
+
+.imgBlck2 {
+    @include bg-image('../image/imgBlock2.png');
+}
+
+.imgBlck3 {
+    @include bg-image('../image/imgBlock3.png');
+}
+
+.character {
+    @include bg-image('../image/characterBg.png');
+    @include flex(center, center);
+    padding: 149px 0 197px;
+    width: 100%;
+}
+
+.characterBlock {
+    @include flex(row, space-between, center);
+}
+
+.character__imageCards {
+    @include flex(row, flex-start, center);
+}
+
+.character__imageCard--main {
+    width: 504px;
+    height: 510px;
+}
+
+.character__imageCard--secondary {
+    @include flex(column);
+}
+
+.character__description,
+.character__image-wrapper {
+    @include flex(column, flex-start, flex-start, 28px);
+}
+
+.character__subtitle p,
+.character__h3 .h3--italic {
+    @include text-style();
+    letter-spacing: 0.6px;
+}
+
+.character__imageIcons {
+    @include flex(row, space-between, flex-start, 0);
+    padding-top: 25px;
+}
+
+.character__icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.charIcon1 {
+    @include bg-image('../image/CharIcon1.svg');
+    width: 100px;
+    height: 100px;
+}
+
+.charIcon2 {
+    @include bg-image('../image/CharIcon2.svg');
+    width: 92px;
+    height: 93px;
+}
+
+.charIcon3,
+.charIcon4,
+.charIcon5 {
+    width: 100px;
+    height: 100px;
+}
+
+.reg {
+    padding: 60px 56px;
+    background-color: $dark-bg2;
+    @include flex(center, center);
+}
+
+.reg__heading h2 {
+    @include text-style($white, 800, 48px, normal);
+    padding-bottom: 33px;
+    letter-spacing: 2px;
+}
+
+label {
+    @include text-style($white, 300, 24px, italic, 0.7, 1px);
+}
+
+.reg-wrapper {
+    @include flex(row, space-between, center, 60px);
+    flex-wrap: wrap;
+}
+
+.reg__form form {
+    @include flex(column, flex-start, flex-start, 33px);
+    width: max-content;
+}
+
+.reg__form input,
+.reg__form select {
+    background-color: $dark-bg;
+    border: none;
+    width: 811px;
+    height: 75px;
+    padding: 15px;
+    color: $white;
+    border-radius: 4px;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    outline: none;
+
+    &::placeholder {
+        color: $white;
+        opacity: 0.7;
+    }
+
+    &:focus {
+        border: 1px solid $accent;
+    }
+}
+
+.reg__form select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.reg__form select option {
+    color: $white;
+    background-color: $dark-bg;
+    padding: 10px;
+}
+
+.icon-wrapper,
+.main__icons-wrapper {
+    @include flex(row, flex-start, center);
+    gap: 45px;
+}
+
+.icon-wrapper img,
+.main__icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.main__platform--color1,
+.qrColor {
+    animation: glowPulse 2.5s infinite;
+}

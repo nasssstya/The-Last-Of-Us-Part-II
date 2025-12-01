@@ -1,0 +1,435 @@
+$font-family: "Inter", sans-serif;
+$gradient-bg: linear-gradient(135deg, rgba(153, 246, 206, 0.65), rgba(57, 113, 89, 0.65));
+$white: #fff;
+$bg-header: #060707;
+$bg-whyUs: #0C0C0C;
+$bg-faq-odd: #292929;
+
+@media (max-width: 576px) {
+    body {
+        color: $white;
+    }
+
+    header {
+        height: 75px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-header;
+    }
+
+    .container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-wrapper {
+        display: none;
+    }
+
+    .navMobile-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        &__icon-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .main {
+        display: none;
+    }
+
+    .mainMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 667px;
+        width: 100%;
+        background: url(../image/mainMobile-bg.png) no-repeat;
+        background-size: 100% 100%;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            padding-bottom: 58px;
+            width: 100%;
+        }
+
+        &__button button,
+        .ad__button,
+        .learnMore__button button {
+            color: $white;
+            font-family: $font-family;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-size: 20px;
+            font-style: italic;
+            width: 151px;
+            height: 44px;
+            border: none;
+            cursor: pointer;
+            background: $gradient-bg;
+            clip-path: polygon(12px 0%,
+                    100% 0%,
+                    151px 25.5484px,
+                    138.321px 44px,
+                    0 44px,
+                    0 18.2093px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        &__btns-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 35px;
+            margin-top: 32px;
+        }
+
+        &__platform {
+            &--color {
+                color: #DD4056;
+                font-weight: 600;
+                font-size: 18px;
+                font-style: italic;
+            }
+
+            p {
+                color: $white;
+                font-weight: 600;
+                font-size: 18px;
+                font-style: italic;
+            }
+        }
+
+        &__heading {
+            h1 {
+                color: $white;
+                font-weight: 600;
+                font-size: 30px;
+                font-style: normal;
+            }
+
+            margin-top: 30px;
+        }
+
+        &__price {
+            color: $white;
+            font-weight: 600;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        &__rating {
+            margin-top: 23px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            & .stars-wrapper {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+
+                .star img {
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+
+            p {
+                color: $white;
+                font-weight: 300;
+                font-size: 14px;
+                font-style: italic;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        &__icons-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            & .icon img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .character {
+        display: none;
+    }
+
+    .description {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../image/descriptionMobile-bg.png) no-repeat;
+        background-size: 100% 100%;
+
+        &__heading h2 {
+            color: $white;
+            font-weight: 700;
+            font-size: 28px;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+
+        &__subtitle {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 25px;
+            color: $white;
+            font-weight: 400;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+
+    .whyUs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-whyUs;
+        height: 1192px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__heading h2 {
+            color: $white;
+            font-weight: 800;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &__Cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 30px;
+        }
+
+        &__card-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__subtitle p {
+            color: $white;
+            font-weight: 300;
+            font-size: 15px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        &__cardHeading h3 {
+            color: $white;
+            font-weight: 600;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        &__image {
+            width: 300px;
+            height: 170px;
+
+            &.whyImg1 {
+                background: url(../image/mobile/whyImg1.png) no-repeat;
+                background-size: 100% 100%;
+            }
+
+            &.whyImg2 {
+                background: url(../image/mobile/whyImg2.png) no-repeat;
+                background-size: 100% 100%;
+            }
+
+            &.whyImg3 {
+                background: url(../image/mobile/whyImg3.png) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+
+    .ad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+        background: url(../image/adMobilebg.png) no-repeat;
+        background-size: 100% 100%;
+
+        &--black {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 50%;
+            align-self: flex-end;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &__heading h2 {
+            color: $white;
+            font-weight: 800;
+            font-size: 32px;
+        }
+
+        &__subtitle p {
+            color: $white;
+            font-weight: 400;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+
+    .learnMore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 100%;
+        background: url(../image/learnMoreMobileBG.png) no-repeat;
+        background-size: 100% 100%;
+
+        &__h2 h2 {
+            color: $white;
+            font-weight: 600;
+            font-size: 28px;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+
+        &__subtitle p {
+            color: $white;
+            font-weight: 300;
+            font-size: 16px;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .faq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        width: 100%;
+        background: url(../image/faqMobileBG.png) no-repeat;
+        background-size: 100% 100%;
+
+        &__heading h2 {
+            color: $white;
+            font-weight: 800;
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            padding-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__question-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-self: flex-end;
+
+            &__questionBlock {
+                width: 380px;
+                height: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__questionContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-content: center;
+                width: 328px;
+
+                .faqOdd {
+                    background: $bg-faq-odd;
+                }
+
+                .faq__question p {
+                    color: $white;
+                    opacity: 0.7;
+                    font-weight: 600;
+                    font-size: 18px;
+                    font-style: italic;
+                    letter-spacing: 0.4px;
+                }
+            }
+        }
+
+        &__questionIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
